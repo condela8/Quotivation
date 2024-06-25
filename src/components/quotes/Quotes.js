@@ -9,7 +9,8 @@ function Quotes({ filteredQuotes, categories, category, handleCategoryChange, ad
         <div className="category-header">
         <h2 className="category-header">Pick your Favorite Quotes Below</h2>
           <p>
-             Browse through your collection of quotes
+          You have a collection of {filteredQuotes.length} {category !=="All" && category} {filteredQuotes.length !==1 ? 
+          "quotes!" :"quote"}
           </p>
           <CategoryForm  categories={categories} 
           category = {category} handleCategoryChange={handleCategoryChange}/>
